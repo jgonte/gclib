@@ -1,6 +1,6 @@
 {
   "name": "gclib",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Javascript library to support components",
   "keywords": [],
   "main": "dist/gclib.umd.js",
