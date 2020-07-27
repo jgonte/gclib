@@ -1,13 +1,13 @@
-import { UserManager } from 'oidc-client'
+import OIDC from 'oidc-client'
 import AuthProvider from './AuthProvider'
 import OidcClientAuthProviderConfig from './OidcClientAuthProviderConfig'
 import RequestHeader from '../data/RequestHeader'
 
 export default class OidcClientAuthProvider implements AuthProvider {
-  private _userManager: UserManager
+  private _userManager: OIDC.UserManager
 
   constructor(config: OidcClientAuthProviderConfig) {
-    this._userManager = new UserManager(config)
+    this._userManager = new OIDC.UserManager(config)
   }
 
   login() {

@@ -2,6 +2,9 @@
 // import "core-js/fn/array.find"
 // ...
 
+import OidcClientAuthProvider from './auth/OidcClientAuthProvider'
+import OidcClientAuthProviderConfig from './auth/OidcClientAuthProviderConfig'
+import AppUser from './auth/AppUser'
 import RolePolicy from './auth/RolePolicy'
 import RequestHeader from './data/RequestHeader'
 import CollectionLoaderConfig from './data/loaders/CollectionLoaderConfig'
@@ -20,10 +23,14 @@ import {
 import SubmitterConfig from './data/submitters/SubmitterConfig'
 import Submitter from './data/submitters/Submitter'
 import appCtrl from './app/appCtrl'
+import IntlProvider from './intl/IntlProvider'
 import IntlSubscriber from './intl/IntlSubscriber'
 
 export {
   // auth
+  OidcClientAuthProvider,
+  OidcClientAuthProviderConfig,
+  AppUser,
   RolePolicy,
   // data
   RequestHeader,
@@ -47,5 +54,6 @@ export {
   // app
   appCtrl,
   // intl
+  IntlProvider,
   IntlSubscriber
 }
