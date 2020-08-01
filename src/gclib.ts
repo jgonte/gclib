@@ -25,6 +25,7 @@ import Submitter from './data/submitters/Submitter'
 import appCtrl from './app/appCtrl'
 import IntlProvider from './intl/IntlProvider'
 import IntlSubscriber from './intl/IntlSubscriber'
+import { Constructor } from './utils/Constructor'
 
 export {
   // auth
@@ -55,5 +56,7 @@ export {
   appCtrl,
   // intl
   IntlProvider,
-  IntlSubscriber
+  IntlSubscriber,
+  // utils
+  Constructor
 }
