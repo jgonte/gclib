@@ -2,6 +2,8 @@
 // import "core-js/fn/array.find"
 // ...
 
+import Observer from './utils/Observer';
+import Subscriber from './utils/Subscriber';
 import OidcClientAuthProvider from './auth/OidcClientAuthProvider';
 import OidcClientAuthProviderConfig from './auth/OidcClientAuthProviderConfig';
 import AppUser from './auth/AppUser';
@@ -29,6 +31,10 @@ import { Constructor } from './utils/Constructor';
 
 export {
 
+  // utils
+  Observer,
+  Subscriber,
+  
   // auth
   OidcClientAuthProvider,
   OidcClientAuthProviderConfig,

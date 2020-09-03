@@ -35,19 +35,19 @@ export default class IntlProvider extends Observer {
     if (!data) {
       // There are no translations for this language
 
-      console.error(`Missing translations for language: [${lang}]. (key was [${key}]).`)
+      console.error(`Missing translations for language: [${lang}]. (key was [${key}]).`);
 
-      return `[${key}(L:${lang})]`
+      return `[${key}(L:${lang})]`;
     }
 
-    const translation = data[key]
+    const translation = data[key];
 
     if (!translation) {
       // There is no translation for this key in this language
 
-      console.error(`Missing translation key: [${key}] in language: [${lang}].`)
+      console.error(`Missing translation key: [${key}] in language: [${lang}].`);
 
-      return `[(K:${key})${lang}]`
+      return `[(K:${key})${lang}]`;
     }
 
     return translation
